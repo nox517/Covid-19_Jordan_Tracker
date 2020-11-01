@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    z-index: 1;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #f6f5f0;
+    padding: 2%;
+    /* box-shadow: 6px 20px 6px -8px rgba(0,0,0,0.75) ; */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=23, Direction=0, Color=#000000)";
+    /*IE 8*/
+    -moz-box-shadow: 0 0 23px -1px rgba(0, 0, 0, 0.5);
+    /*FF 3.5+*/
+    -webkit-box-shadow: 0 0 23px -1px rgba(0, 0, 0, 0.5);
+    /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 0 23px -1px rgba(0, 0, 0, 0.5);
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=23, Direction=135, Color=#000000);
+    /*IE 5.5-7*/
+    margin: 50px auto;
+}
+
+.board{
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.container h1{
+    margin: 0 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+img#flag{
+    height: 20px;
+    width: 50px;
+}
+
+.card{
+    width: 100%;
+    background-color: #CCC;
+    padding: 5%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #FFF;
+}
+
+.card.a{
+    background-color: #41a7ff;
+}
+
+.card.cr {
+    background-color: #ff3434;
+}
+
+.card.r {
+    background-color: #32b336;
+}
+
+.card.ca {
+    background-color: #d83f3f;
+}
+
+.card.d {
+    background-color: #ff0053;
+}
+
+.card.t {
+    background-color: #ffa501;
+}
+
+.card.tc{
+    background-color: #1c62a0;
+}
+
+.card.td {
+    background-color: #db4778;
+}
+
+.card.tr {
+    background-color: #115213;
+}
+
+.card h5{
+    margin: 30px 0 10px 0;
+}
+
+.card span{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.card i{
+    font-size: 32px;
+}
+
+.copyrights{
+    text-align: center;
+}
+
+.copyrights a{
+    text-decoration: none !important;
+    color: #000000;
+}
+
+@media(max-width:767px){
+    .board{
+        column-count: 1;
+    }
+}
